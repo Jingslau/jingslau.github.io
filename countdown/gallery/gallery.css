@@ -1,0 +1,113 @@
+.gallery {
+    background-color: #121212;
+    height: 100%;
+    width: 100%;
+}
+
+.text {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.lightbox-gallery {
+    background-image: linear-gradient(#4A148C, #E53935);
+    background-repeat: no-repeat;
+    color: #000;
+    overflow-x: hidden
+}
+
+.lightbox-gallery p {
+    color: #fff
+}
+
+.lightbox-gallery h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: #fff
+}
+
+@media (max-width:767px) {
+    .lightbox-gallery h2 {
+        margin-bottom: 25px;
+        padding-top: 25px;
+        font-size: 24px
+    }
+}
+
+.lightbox-gallery .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto 40px
+}
+
+.lightbox-gallery .intro p {
+    margin-bottom: 0
+}
+
+.lightbox-gallery .photos {
+    padding-bottom: 20px
+}
+
+.lightbox-gallery .item {
+    padding-bottom: 30px;
+}
+
+.item {
+    margin-bottom: 10px !important;
+}
+
+@media only screen and (max-width: 2580px),
+(min-width: 1980px) {
+    .fillerText {
+        font-size: 50px;
+    }
+    .welcomeText {
+        font-size: 100px;
+    }
+    .countdown {
+        font-size: 150px;
+    }
+    .motivationText {
+        font-size: 50px;
+    }
+    .mainBox {
+        height: 1800px;
+        width: 1200px;
+    }
+    .btn-grad {
+        width: 250px;
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    .waves3 {
+        position: absolute;
+        bottom: 0px;
+        opacity: 1;
+    }
+    .waves4 {
+        position: absolute;
+        bottom: 20px;
+        opacity: 0.5;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .text {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .text {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .text {
+        font-size: 20px;
+    }
+}

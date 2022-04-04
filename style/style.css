@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'coding_light';
+    /*a name to be used later*/
+    src: url('../fonts/JetBrainsMono-Light.ttf');
+    /*URL to font*/
+}
+
+@font-face {
+    font-family: 'coding_bold';
+    /*a name to be used later*/
+    src: url('../fonts/JetBrainsMono-Bold.ttf');
+    /*URL to font*/
+}
+
+@font-face {
+    font-family: 'roboto';
+    /*a name to be used later*/
+    src: url('../fonts/Roboto-Bold.ttf');
+    /*URL to font*/
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    14% {
+        text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    15% {
+        text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    49% {
+        text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    50% {
+        text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    99% {
+        text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    100% {
+        text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+     ::before,
+     ::after {
+        animation-delay: -1ms !important;
+        animation-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+        background-attachment: initial !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0s !important;
+        transition-delay: 0s !important;
+    }
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    /* no underline */
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+}
+
+.container {
+    background: rgb(10, 10, 10);
+    font-size: 2vw;
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 30vh;
+    line-height: 100%;
+    color: white;
+    overflow-x: hidden;
+    justify-content: left;
+    justify-items: left;
+    align-items: left;
+    align-content: left;
+}
