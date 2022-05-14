@@ -12,29 +12,27 @@ a {
 }
 
 .about-us {
-  display: none;
+  grid-row: 1;
+  visibility: hidden;
+  display: grid;
   opacity: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 0px;
+  width: 0px;
   font-weight: 800;
   justify-content: center;
   align-items: center;
   grid-template-rows: 5% 5% 90%;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -ms-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .about-us__logo-single {
   position: relative;
   align-self: baseline;
   justify-self: center;
-}
-
-.about-us::after {
-  opacity: 1;
 }
 
 .about-us__top-nav {
