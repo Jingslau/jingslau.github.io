@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style/landing.css" />
     <link rel="stylesheet" href="./style/animations.css" />
     <link rel="stylesheet" href="./style/aboutus.css" />
+    <link rel="stylesheet" href="./style/music.css" />
     <title>Document</title>
   </head>
   <main id="swup" class="transition-fade">
@@ -21,10 +22,7 @@
         <div class="title-card__footer">Impressum | Content Info</div>
       </div>
       <div class="landing-grid__nav1" id="nav1" onclick="openAboutUs()">
-        <div class="nav-text" id="nav-text">
-          <div class="nav1__background"></div>
-          ABOUT US
-        </div>
+        <div class="nav-text" id="nav-text">ABOUT US</div>
         <div class="about-us" id="about-us">
           <div
             class="about-us__top-nav"
@@ -69,16 +67,49 @@
         </div>
       </div>
       <div class="landing-grid__nav2" id="nav2" onclick="openMusic()">
-        <div class="nav-text" id="nav-text">
-          <div class="nav2__background"></div>
-          MUSIC
+        <div class="nav-text" id="nav-text-main">MUSIC</div>
+        <div class="music" id="music">
+          <div
+            class="music__top-nav"
+            style="pointer-events: all"
+            onclick="closeMusic()"
+          >
+            <img
+              src="../assets/icons/arrow-left-funky.svg"
+              class="top-nav__icon"
+              alt=""
+            />
+            <div class="top-nav__text">BACK</div>
+          </div>
+          <img
+            src="./assets/logo_single.svg"
+            class="music__logo-single"
+            alt=""
+          />
+          <div class="music__main-grid">
+            <div class="music-main-grid__stream">
+              <img src="./assets/icons/soundcloud.svg" alt="" srcset="" />
+              <img src="./assets/icons/spotify.svg" alt="" srcset="" />
+              <img src="./assets/icons/applemusic.svg" alt="" srcset="" />
+            </div>
+            <div class="music-main-grid__text">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amete.
+            </div>
+            <img
+              src="./assets/images/single_cover.jpg"
+              alt=""
+              class="music-main-grid__single-cover"
+            />
+            <div class="music-main-grid__nav-text">MUSIC</div>
+          </div>
         </div>
       </div>
       <div class="landing-grid__nav3" id="nav3" onclick="openContact()">
-        <div class="nav-text" id="nav-text">
-          <div class="nav3__background"></div>
-          CONTACT
-        </div>
+        <div class="nav-text" id="nav-text">CONTACT</div>
       </div>
     </div>
     <script src="./js/pageChange.js"></script>

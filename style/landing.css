@@ -45,6 +45,7 @@ a {
   border-top-color: black;
   cursor: pointer;
   width: 100%;
+  overflow: hidden;
   filter: grayscale(100%);
   filter: blur(0px);
   background-size: 200vh;
@@ -60,17 +61,22 @@ a {
 .landing-grid__nav2 {
   display: grid;
   visibility: visible;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../assets/sky.jpg");
   border-top-width: 20px;
-  border-left: 5px;
+  border-top-style: solid;
+  border-left: 2.5px;
   border-left-style: solid;
   border-top-style: solid;
   border-left-color: black;
   border-top-color: black;
-  background-size: 100vh;
-  background-position-x: -300px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../assets/sky.jpg");
+  border-top-color: black;
   cursor: pointer;
+  width: 100%;
+  filter: grayscale(100%);
+  filter: blur(0px);
+  background-size: 200vh;
+  background-position-x: -300px;
   justify-content: center;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
@@ -86,7 +92,7 @@ a {
   border-top-width: 20px;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("../assets/pines.jpg");
-  border-left: 5px;
+  border-left: 2.5px;
   border-left-style: solid;
   border-top-style: solid;
   border-left-color: black;
@@ -103,6 +109,7 @@ a {
 }
 
 .nav-text {
+  grid-row: 1;
   position: relative;
   visibility: visible;
   opacity: 1;
