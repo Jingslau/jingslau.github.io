@@ -255,37 +255,39 @@ async function openContact() {
 }
 
 async function closeContact() {
-  if (activeWindow === true) {
-    contact.style.opacity = "0";
-    nav3.style.width = "0px";
-    await sleep(1000);
-    nav1.style.position = "relative";
-    nav2.style.position = "relative";
-    nav3.style.position = "relative";
-    title.style.position = "relative";
-    nav1.style.visibility = "visible";
-    nav2.style.visibility = "visible";
-    title.style.visibility = "visible";
-    text.style.visibility = "visible";
-    text.style.opacity = "1";
-    navText2.style.visibility = "visible";
-    navText2.style.opacity = "1";
-    navText2.style.position = "relative";
-    nav3.style = "border-top-width: 20px";
-    music.style.height = "0px";
-    title.style.opacity = "1";
-    nav1.style.opacity = "1";
-    nav2.style.opacity = "1";
-    nav3.style.width = "100%";
-    nav3.style.opacity = "1";
-    text.style.opacity = "1";
-    text.style.display = "grid";
-    nav1.style.display = "grid";
-    nav2.style.display = "grid";
-    title.style.display = "grid";
-    nav1.style.pointerEvents = "all";
-    nav2.style.pointerEvents = "all";
-    nav3.style.pointerEvents = "all";
-    activeWindow = false;
-  }
+  console.log("test");
+  contact.style.opacity = "0";
+  await sleep(600);
+  contact.style.width = "0px";
+  contact.style.visibility = "hidden";
+  nav3.style.width = "0px";
+  await sleep(1200);
+  nav1.style.position = "relative";
+  nav2.style.position = "relative";
+  nav3.style.position = "relative";
+  title.style.position = "relative";
+  nav1.style.visibility = "visible";
+  nav2.style.visibility = "visible";
+  title.style.visibility = "visible";
+  text.style.visibility = "visible";
+  text.style.opacity = "1";
+  navText2.style.visibility = "visible";
+  navText2.style.opacity = "1";
+  navText2.style.position = "relative";
+  nav3.style = "border-top-width: 20px";
+  contact.style.height = "0px";
+  title.style.opacity = "1";
+  nav1.style.opacity = "1";
+  nav2.style.opacity = "1";
+  nav3.style.width = "100%";
+  nav3.style.opacity = "1";
+  text.style.opacity = "1";
+  text.style.display = "grid";
+  nav1.style.display = "grid";
+  nav2.style.display = "grid";
+  title.style.display = "grid";
+  nav1.style.pointerEvents = "all";
+  nav2.style.pointerEvents = "all";
+  nav3.style.pointerEvents = "all";
+  activeWindow = false;
 }
