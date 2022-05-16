@@ -33,6 +33,17 @@ a {
   transition: all 1s ease-in-out;
 }
 
+.about-us-presskit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.about-us-presskit-icon {
+  height: 60px;
+}
+
 .about-us__logo-single {
   position: relative;
   align-self: baseline;
@@ -75,12 +86,15 @@ a {
 }
 
 .about-us-main-grid__text {
-  position: relative;
+  overflow-x: scroll;
+  height: 300px;
   justify-self: center;
+  height: 70%;
   font-size: 2.6rem;
   color: rgb(255, 255, 255);
   text-shadow: 5px 5px 20px #353535;
   width: 80%;
+  overflow-x: hidden;
   font-weight: 200;
   text-align: end;
 }
@@ -106,4 +120,120 @@ a {
 
 .about-us-top-nav__text:hover {
   color: white;
+}
+
+@media (max-width: 300px) {
+  .about-us {
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 40% 40%;
+    overflow-y: scroll;
+    height: 90vh;
+  }
+
+  .about-us__top-nav {
+    position: relative;
+    top: -20px;
+    left: -20px;
+  }
+
+  .about-us-main-grid__nav-text {
+    writing-mode: horizontal-tb;
+    font-size: 2rem;
+    position: absolute;
+    top: 0px;
+    margin-top: 20px;
+  }
+
+  .about-us__main-grid {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: visible;
+  }
+
+  .about-us-main-grid__text {
+    height: 100%;
+    overflow: visible;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-us {
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 40% 40%;
+    overflow-y: scroll;
+    height: 90vh;
+  }
+
+  .about-us__top-nav {
+    position: relative;
+    top: -20px;
+    left: -20px;
+  }
+
+  .main-grid__image {
+    width: 50% !important;
+  }
+
+  .about-us-main-grid__nav-text {
+    writing-mode: horizontal-tb;
+    font-size: 2rem;
+    position: absolute;
+    top: 0px;
+    margin-top: 20px;
+  }
+
+  .about-us__main-grid {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: visible;
+  }
+
+  .about-us-main-grid__text {
+    height: 100%;
+    overflow: visible;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about-us {
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 40% 40%;
+    overflow-y: scroll;
+    height: 90vh;
+  }
+
+  .about-us__top-nav {
+    position: relative;
+    top: -20px;
+    left: -20px;
+  }
+
+  .main-grid__image {
+    width: 40% !important;
+  }
+
+  .about-us-main-grid__nav-text {
+    writing-mode: horizontal-tb;
+    font-size: 2rem;
+    position: absolute;
+    top: 0px;
+    margin-top: 20px;
+  }
+
+  .about-us__main-grid {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: visible;
+  }
+
+  .about-us-main-grid__text {
+    height: 100%;
+    overflow: visible;
+    text-align: center;
+  }
 }

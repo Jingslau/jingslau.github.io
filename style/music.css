@@ -12,6 +12,9 @@ a {
 }
 
 .music {
+  position: absolute;
+  top: 0px;
+  left: 0px;
   grid-row: 1;
   visibility: hidden;
   overflow: hidden;
@@ -72,6 +75,8 @@ a {
   color: rgb(255, 255, 255);
   text-shadow: 5px 5px 20px #353535;
   width: 80%;
+  height: 50vh;
+  overflow-y: scroll;
   font-weight: 200;
   text-align: end;
 }

@@ -91,11 +91,11 @@ async function openAboutUs() {
 
     nav1.style = "border-top: 0px";
     nav1.style.width = "100vw";
+    nav1.style.height = "100vh";
     aboutUs.style.visibility = "visible";
     aboutUs.style.width = "100vw";
     await sleep(700);
     aboutUs.style.opacity = "1";
-    nav1.style.pointerEvents = "none";
     nav2.style.pointerEvents = "none";
     nav3.style.pointerEvents = "none";
     activeWindow = true;
@@ -145,44 +145,30 @@ async function closeAboutUs() {
 async function openMusic() {
   closeImpressum();
   if (activeWindow == false) {
-    music.style.height = "100vh";
     nav1.style.opacity = "0";
     nav3.style.opacity = "0";
-    nav2.style = "border-top: 0px";
-    navText.style.visibility = "hidden";
-    navText.style.opacity = "0";
-    navText.style.position = "absolute";
-    nav2.style.width = "0px";
     title.style.opacity = "0";
-    text.style.opacity = "0";
-    await sleep(1200);
-    nav1.style.position = "absolute";
+    nav2.style.border = "0px";
+    await sleep(600);
+    navText.style.opacity = "0";
+    await sleep(300);
+    nav2.style.width = "0px";
+    await sleep(900);
     nav2.style.position = "absolute";
-    nav3.style.position = "absolute";
-    title.style.position = "absolute";
-    nav1.style.top = "0px";
     nav2.style.top = "0px";
-    nav3.style.top = "0px";
-    title.style.top = "0px";
-    nav1.style.left = "0px";
     nav2.style.left = "0px";
-    nav3.style.left = "0px";
-    title.style.left = "0px";
-
-    text.style.visibility = "hidden";
-    nav1.style.visibility = "hidden";
-    nav3.style.visibility = "hidden";
-    title.style.visibility = "hidden";
-
-    nav2.style = "border-top: 0px";
     nav2.style.width = "100vw";
-    music.style.visibility = "visible";
+    nav2.style.height = "100vh";
     music.style.width = "100vw";
+    music.style.height = "100vh";
     await sleep(700);
+
+    music.style.visibility = "visible";
+
+    await sleep(100);
     music.style.opacity = "1";
 
     nav1.style.pointerEvents = "none";
-    nav2.style.pointerEvents = "none";
     nav3.style.pointerEvents = "none";
     activeWindow = true;
   }
@@ -239,6 +225,7 @@ async function openContact() {
     await sleep(600);
     navText2.style.opacity = "0";
     nav3.style.width = "0px";
+    nav3.style.border = "0px";
     await sleep(300);
     contact.style.visibility = "visible";
     contact.style.width = "100vw";
