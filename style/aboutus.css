@@ -12,8 +12,12 @@ a {
 }
 
 .about-us {
+  position: absolute;
+  left: 0px;
+  top: 0px;
   grid-row: 1;
   visibility: hidden;
+  overflow: hidden;
   display: grid;
   opacity: 0;
   height: 0px;
@@ -47,20 +51,30 @@ a {
 
 .about-us__main-grid {
   display: grid;
-  grid-template-columns: 30% 60% 10%;
+  grid-template-columns: 40% 50% 10%;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
 
-.main-grid__image {
-  position: relative;
-  left: 50px;
-  width: 25vw;
-  box-shadow: 1px 1px 80px #383838;
+.about-us-main-grid__single-cover {
+  width: 90%;
 }
 
-.main-grid__text {
+.about-us-main-grid__stream {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  gap: 100px;
+}
+
+.main-grid__image {
+  width: 60%;
+  filter: drop-shadow(5px 5px 20px #353535);
+  justify-self: center;
+}
+
+.about-us-main-grid__text {
   position: relative;
   justify-self: center;
   font-size: 2.6rem;
@@ -71,7 +85,7 @@ a {
   text-align: end;
 }
 
-.main-grid__nav-text {
+.about-us-main-grid__nav-text {
   position: relative;
   justify-self: center;
   font-family: "PT Serif";
@@ -79,17 +93,17 @@ a {
   text-orientation: sideways;
   font-size: 5rem;
   color: white;
-  text-shadow: 5px 5px 20px #919191;
+  text-shadow: 5px 5px 40px #353535;
 }
 
-.top-nav__icon {
+.about-us-top-nav__icon {
   width: 20px;
 }
 
-.top-nav__text {
+.about-us-top-nav__text {
   margin-left: 10px;
 }
 
-.top-nav__text:hover {
+.about-us-top-nav__text:hover {
   color: white;
 }

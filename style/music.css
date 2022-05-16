@@ -65,13 +65,6 @@ a {
   gap: 100px;
 }
 
-.music-main-grid__image {
-  position: relative;
-  left: 50px;
-  width: 25vw;
-  box-shadow: 1px 1px 80px #383838;
-}
-
 .music-main-grid__text {
   position: relative;
   justify-self: center;
@@ -94,14 +87,14 @@ a {
   text-shadow: 5px 5px 20px #919191;
 }
 
-.top-nav__icon {
+.music-top-nav__icon {
   width: 20px;
 }
 
-.top-nav__text {
+.music-top-nav__text {
   margin-left: 10px;
 }
 
-.top-nav__text:hover {
+.music-top-nav__text:hover {
   color: white;
 }
