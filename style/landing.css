@@ -9,30 +9,77 @@ a {
   text-decoration: none; /* no underline */
 }
 
+main {
+  height: 100vh;
+}
+
 .landing-grid {
   background-color: black;
   height: 100vh;
   width: 100vw;
   display: grid;
   grid-template-columns: 40% 20% 20% 20%;
-  overflow-y: hidden;
   overflow-x: hidden;
 }
 
 .landing-grid__title-card {
   display: grid;
-  height: 100vh;
+  height: 100%;
   color: white;
   grid-template-rows: 90% 10%;
   align-items: center;
   justify-content: center;
+  overflow-y: hidden;
   transition: all 1s;
+  overflow-x: hidden;
+}
+
+.title-logo-sko {
+  grid-row: 1;
+  opacity: 1;
+  width: 60%;
+  overflow: hidden;
+  justify-self: center;
+  justify-content: center;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.back-impressum {
+  font-family: "Reenie Beanie";
+  font-size: 2rem;
+  opacity: 0;
+  grid-row: 3;
+  color: rgb(146, 146, 146);
+  justify-self: center;
+  height: 0px;
+  width: 0px;
+  cursor: pointer;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.back-impressum:hover {
+  color: white;
 }
 
 .title-card__footer {
+  opacity: 1;
+  grid-row: 2;
   justify-self: center;
   font-family: Roboto;
   font-size: 1rem;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .landing-grid__nav1 {
@@ -40,14 +87,17 @@ a {
   visibility: visible;
   border-top-width: 20px;
   border-top-style: solid;
+  border-left: 2.5px;
+  border-left-style: solid;
+  border-top-style: solid;
+  backdrop-filter: blur(10px);
+  border-left-color: black;
+  border-top-color: black;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("../assets/snow.jpg");
   border-top-color: black;
   cursor: pointer;
   width: 100%;
-  overflow: hidden;
-  filter: grayscale(100%);
-  filter: blur(0px);
   background-size: 200vh;
   background-position-x: -300px;
   justify-content: center;
@@ -88,18 +138,22 @@ a {
 .landing-grid__nav3 {
   display: grid;
   visibility: visible;
-  background-color: violet;
   border-top-width: 20px;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../assets/pines.jpg");
+  border-top-style: solid;
   border-left: 2.5px;
   border-left-style: solid;
   border-top-style: solid;
   border-left-color: black;
   border-top-color: black;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../assets/pines.jpg");
+  border-top-color: black;
+  cursor: pointer;
+  width: 100%;
+  filter: grayscale(100%);
+  filter: blur(0px);
   background-size: 200vh;
   background-position-x: -300px;
-  cursor: pointer;
   justify-content: center;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
@@ -120,6 +174,11 @@ a {
   text-orientation: sideways;
   font-size: 5rem;
   color: white;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .landing-grid__nav1:hover {
@@ -143,4 +202,58 @@ a {
 
 .transform-active {
   color: black;
+}
+
+@media (max-width: 300px) {
+  .landing-grid {
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 20% 20% 20%;
+  }
+
+  .landing-grid__nav1 {
+    border-left-width: 0px;
+    border-top-width: 5px;
+  }
+
+  .landing-grid__nav2 {
+    border-left-width: 0px;
+    border-top-width: 5px;
+  }
+
+  .landing-grid__nav3 {
+    border-left-width: 0px;
+    border-top-width: 5px;
+  }
+
+  .nav-text {
+    writing-mode: horizontal-tb;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  /** Großer Viewport: Browserfenster **/
+  .landing-grid {
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 20% 20% 20%;
+  }
+
+  .landing-grid__nav1 {
+    border-left-width: 0px;
+    border-top-width: 5px;
+  }
+
+  .landing-grid__nav2 {
+    border-left-width: 0px;
+    border-top-width: 5px;
+  }
+
+  .landing-grid__nav3 {
+    border-left-width: 0px;
+    border-top-width: 5px;
+  }
+
+  .nav-text {
+    writing-mode: horizontal-tb;
+  }
 }
