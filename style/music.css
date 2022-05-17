@@ -180,11 +180,6 @@ a {
     grid-template-rows: auto;
   }
 
-  .music-main-grid__single-cover {
-    width: 50%;
-    margin-bottom: 50px;
-  }
-
   .music__top-nav {
     position: relative;
     margin-top: 20px;

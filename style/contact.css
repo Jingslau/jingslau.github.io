@@ -201,6 +201,7 @@ a {
   border-bottom: 2px;
   font-family: Roboto;
   border-style: solid;
+  max-width: 100%;
   padding: 5px;
   border-color: rgb(78, 78, 78);
 }
@@ -265,4 +266,114 @@ a {
 
 .send-button:hover {
   background-color: rgba(172, 162, 200, 0.8);
+}
+
+@media (max-width: 600px) {
+  .contact__main-grid {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    height: 100%;
+  }
+
+  .contact-main-grid__text {
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+    text-align: center;
+  }
+  .contact__logo-single {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .contact-main-grid__nav-text {
+    writing-mode: horizontal-tb;
+    font-size: 2rem;
+    position: absolute;
+    top: 0px;
+    margin-top: 20px;
+  }
+
+  .contact {
+    overflow-y: scroll;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+
+  .e-mail {
+    width: 97%;
+  }
+
+  .select-gender {
+    text-align: left;
+  }
+
+  .selection {
+    width: 100%;
+  }
+
+  .contact-form {
+    margin-bottom: 70px;
+    padding: 20px;
+  }
+
+  .music-main-grid__single-cover-grid {
+    display: grid;
+    margin-bottom: 50px;
+    width: 100%;
+    justify-content: center !important;
+  }
+
+  .music-main-grid__single-cover {
+    justify-self: center !important;
+  }
+
+  .contact__top-nav {
+    position: relative;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .music__main-grid {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    height: 100%;
+  }
+
+  .music-main-grid__text {
+    height: 100%;
+    overflow: visible;
+    text-align: center;
+  }
+  .music__logo-single {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .music-main-grid__nav-text {
+    writing-mode: horizontal-tb;
+    font-size: 2rem;
+    position: absolute;
+    top: 0px;
+    margin-top: 20px;
+  }
+
+  .music {
+    overflow-y: scroll;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+
+  .music-main-grid__single-cover {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+
+  .music__top-nav {
+    position: relative;
+    margin-top: 20px;
+  }
 }
