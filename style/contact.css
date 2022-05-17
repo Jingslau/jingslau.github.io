@@ -75,6 +75,12 @@ a {
   width: 100vw;
 }
 
+.contact-text--title {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 800;
+}
+
 .contact-main-grid__single-cover {
   width: 90%;
 }
@@ -136,8 +142,8 @@ a {
   gap: 20px;
 }
 .contact-text {
-  font-size: 2rem;
-  text-align: left;
+  font-size: 2.5rem;
+  text-align: center;
   font-family: "Reenie Beanie";
 }
 
@@ -268,6 +274,77 @@ a {
   background-color: rgba(172, 162, 200, 0.8);
 }
 
+@media (max-width: 300px) {
+  .contact__main-grid {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    height: 100%;
+  }
+
+  .contact-main-grid__text {
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+    text-align: center;
+  }
+  .contact__logo-single {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .contact-main-grid__nav-text {
+    writing-mode: horizontal-tb;
+    font-size: 2rem;
+    position: absolute;
+    top: 0px;
+    margin-top: 20px;
+  }
+
+  .contact {
+    overflow-y: scroll;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+
+  .e-mail {
+    width: 97%;
+  }
+
+  .select-gender {
+    text-align: left;
+  }
+
+  .selection {
+    width: 100%;
+  }
+
+  .contact-form {
+    margin-bottom: 70px;
+    padding: 20px;
+  }
+
+  .contact-text {
+    font-size: 2rem;
+  }
+
+  .music-main-grid__single-cover-grid {
+    display: grid;
+    margin-bottom: 50px;
+    width: 100%;
+    justify-content: center !important;
+  }
+
+  .music-main-grid__single-cover {
+    justify-self: center !important;
+  }
+
+  .contact__top-nav {
+    position: relative;
+    margin-top: 20px;
+  }
+}
+
 @media (max-width: 600px) {
   .contact__main-grid {
     display: flex;
@@ -285,6 +362,9 @@ a {
   .contact__logo-single {
     margin-top: 40px;
     margin-bottom: 20px;
+  }
+  .contact-text {
+    font-size: 2rem;
   }
 
   .contact-main-grid__nav-text {
@@ -336,24 +416,29 @@ a {
 }
 
 @media screen and (max-width: 992px) {
-  .music__main-grid {
+  .contact__main-grid {
     display: flex;
     flex-direction: column;
     overflow: visible;
     height: 100%;
   }
 
-  .music-main-grid__text {
+  .contact-main-grid__text {
     height: 100%;
+    width: 100%;
     overflow: visible;
     text-align: center;
   }
-  .music__logo-single {
+  .contact-text {
+    font-size: 2rem;
+  }
+  .contact__logo-single {
     margin-top: 40px;
     margin-bottom: 20px;
+    display: none;
   }
 
-  .music-main-grid__nav-text {
+  .contact-main-grid__nav-text {
     writing-mode: horizontal-tb;
     font-size: 2rem;
     position: absolute;
@@ -361,18 +446,41 @@ a {
     margin-top: 20px;
   }
 
-  .music {
+  .contact {
     overflow-y: scroll;
     grid-template-columns: 100%;
     grid-template-rows: auto;
   }
 
-  .music-main-grid__single-cover {
-    width: 50%;
-    margin-bottom: 50px;
+  .e-mail {
+    width: 97%;
   }
 
-  .music__top-nav {
+  .select-gender {
+    text-align: left;
+  }
+
+  .selection {
+    width: 100%;
+  }
+
+  .contact-form {
+    margin-bottom: 70px;
+    padding: 20px;
+  }
+
+  .music-main-grid__single-cover-grid {
+    display: grid;
+    margin-bottom: 50px;
+    width: 100%;
+    justify-content: center !important;
+  }
+
+  .music-main-grid__single-cover {
+    justify-self: center !important;
+  }
+
+  .contact__top-nav {
     position: relative;
     margin-top: 20px;
   }

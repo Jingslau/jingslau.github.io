@@ -37,7 +37,7 @@ main {
 .title-logo-sko {
   grid-row: 1;
   opacity: 1;
-  width: 60%;
+  width: 80%;
   overflow: hidden;
   justify-self: center;
   justify-content: center;
@@ -98,8 +98,7 @@ main {
   border-top-color: black;
   cursor: pointer;
   width: 100%;
-  background-size: 200vh;
-  background-position-x: -300px;
+  background-size: cover;
   justify-content: center;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
@@ -125,8 +124,7 @@ main {
   width: 100%;
   filter: grayscale(100%);
   filter: blur(0px);
-  background-size: 200vh;
-  background-position-x: -300px;
+  background-size: cover;
   justify-content: center;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
@@ -152,8 +150,7 @@ main {
   width: 100%;
   filter: grayscale(100%);
   filter: blur(0px);
-  background-size: 200vh;
-  background-position-x: -300px;
+  background-size: cover;
   justify-content: center;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
@@ -204,7 +201,7 @@ main {
   color: black;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 400px) {
   .landing-grid {
     grid-template-columns: 100%;
     grid-template-rows: 40% 20% 20% 20%;
@@ -228,6 +225,7 @@ main {
   .nav-text {
     writing-mode: horizontal-tb;
     font-size: 3rem;
+    padding: 15px;
   }
 }
 

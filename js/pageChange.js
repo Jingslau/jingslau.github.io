@@ -22,9 +22,14 @@ function sleep(ms) {
 }
 
 async function openImpressum() {
-  if (activeWindow == false && impressumOpen == false) {
+  if (
+    activeWindow == false &&
+    impressumOpen == false &&
+    window.innerWidth > 900
+  ) {
     footer.style.opacity = "0";
     logo.style.opacity = "0";
+    logo.style.width = "40%";
     impressum.style.width = "100%";
     impressum.style.height = "100%";
     await sleep(1200);
@@ -32,23 +37,90 @@ async function openImpressum() {
     logo.style.justifyItems = "center";
     impressum.style.position = "relative";
     impressum.style.overflowY = "scroll";
+    impressum.style.justifyContent = "center";
+
+    logo.style.opacity = "1";
 
     backButton.style.opacity = "1";
     footer.style.height = "0px";
-    title.style.gridTemplateRows = "20% 70% 10%";
-    logo.style.opacity = "1";
+    title.style.gridTemplateRows = "15% 65% 20%";
+    title.style.width = "110%";
     impressum.style.opacity = "1";
     impressum.style.gridRow = "2";
+    impressumOpen = true;
+  } else if (activeWindow == false && impressumOpen == false) {
+    nav1.style.opacity = "0";
+    nav2.style.opacity = "0";
+    nav3.style.opacity = "0";
+    footer.style.opacity = "0";
+    logo.style.opacity = "0";
+    await sleep(800);
+    title.style.height = "100vh";
+    title.style.width = "100vw";
+    logo.style.width = "40%";
+    impressum.style.width = "100%";
+    impressum.style.height = "100%";
+    await sleep(1200);
+    logo.style.justifySelf = "center";
+    logo.style.justifyItems = "center";
+    impressum.style.position = "relative";
+    impressum.style.overflowY = "scroll";
+    impressum.style.justifyContent = "center";
+
+    logo.style.opacity = "1";
+
+    backButton.style.opacity = "1";
+    footer.style.height = "0px";
+    title.style.gridTemplateRows = "15% 65% 20%";
+    impressum.style.opacity = "1";
+    impressum.style.gridRow = "2";
+    nav1.style.pointerEvents = "none";
+    nav2.style.pointerEvents = "none";
+    nav3.style.pointerEvents = "none";
     impressumOpen = true;
   }
 }
 
 async function closeImpressum() {
-  if (impressumOpen == true) {
+  if (impressumOpen == true && window.innerWidth > 900) {
     impressum.style.opacity = "0";
     backButton.style.opacity = "0";
     logo.style.opacity = "0";
-    await sleep(1200);
+    await sleep(900);
+
+    logo.style.width = "80%";
+
+    impressum.style.width = "0px";
+    impressum.style.height = "0px";
+    impressum.style.position = "absolute";
+    impressum.style.top = "0px";
+    impressum.style.left = "0px";
+    impressum.style.gridRow = "1";
+    logo.style.justifySelf = "center";
+    logo.style.justifyItems = "center";
+    footer.style.height = "auto";
+    impressum.style.gridRow = "3";
+    title.style.gridTemplateRows = "90% 10%";
+    await sleep(900);
+    logo.style.opacity = "1";
+    footer.style.opacity = "1";
+    impressumOpen = false;
+  } else if (impressumOpen == true && window.innerWidth < 900) {
+    impressum.style.opacity = "0";
+    backButton.style.opacity = "0";
+    logo.style.opacity = "0";
+    await sleep(900);
+    title.style.height = "100%";
+    title.style.width = "auto";
+    nav1.style.opacity = "1";
+    nav2.style.opacity = "1";
+    nav3.style.opacity = "1";
+    nav1.style.pointerEvents = "all";
+    nav2.style.pointerEvents = "all";
+    nav3.style.pointerEvents = "all";
+
+    logo.style.width = "80%";
+
     impressum.style.width = "0px";
     impressum.style.height = "0px";
     logo.style.justifySelf = "center";
@@ -273,9 +345,9 @@ async function closeContact() {
   navText2.style.opacity = "1";
   navText2.style.position = "relative";
   if (window.innerWidth > 900) {
-    nav2.style = "border-top-width: 20px";
+    nav3.style = "border-top-width: 20px";
   } else {
-    nav2.style = "border-top-width: 5px";
+    nav3.style = "border-top-width: 5px";
   }
   contact.style.height = "0px";
   title.style.opacity = "1";
