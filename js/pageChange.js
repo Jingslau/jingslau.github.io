@@ -28,11 +28,14 @@ async function openImpressum() {
     window.innerWidth > 900
   ) {
     footer.style.opacity = "0";
+
     logo.style.opacity = "0";
     logo.style.width = "40%";
-    impressum.style.width = "100%";
+    impressum.style.width = "90%";
     impressum.style.height = "100%";
     await sleep(1200);
+    footer.style.position = "absolute";
+    footer.style.top = "0px";
     logo.style.justifySelf = "center";
     logo.style.justifyItems = "center";
     impressum.style.position = "relative";
@@ -44,7 +47,7 @@ async function openImpressum() {
     backButton.style.opacity = "1";
     footer.style.height = "0px";
     title.style.gridTemplateRows = "15% 65% 20%";
-    title.style.width = "110%";
+    title.style.width = "100%";
     impressum.style.opacity = "1";
     impressum.style.gridRow = "2";
     impressumOpen = true;
@@ -54,11 +57,14 @@ async function openImpressum() {
     nav3.style.opacity = "0";
     footer.style.opacity = "0";
     logo.style.opacity = "0";
+
     await sleep(800);
+    footer.style.position = "absolute";
+    footer.style.top = "0px";
     title.style.height = "100vh";
     title.style.width = "100vw";
     logo.style.width = "40%";
-    impressum.style.width = "100%";
+    impressum.style.width = "90%";
     impressum.style.height = "100%";
     await sleep(1200);
     logo.style.justifySelf = "center";
@@ -89,7 +95,8 @@ async function closeImpressum() {
     await sleep(900);
 
     logo.style.width = "80%";
-
+    footer.style.position = "relative";
+    footer.style.top = "auto";
     impressum.style.width = "0px";
     impressum.style.height = "0px";
     impressum.style.position = "absolute";
@@ -110,6 +117,8 @@ async function closeImpressum() {
     backButton.style.opacity = "0";
     logo.style.opacity = "0";
     await sleep(900);
+    footer.style.position = "relative";
+    footer.style.top = "auto";
     title.style.height = "100%";
     title.style.width = "auto";
     nav1.style.opacity = "1";
