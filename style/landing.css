@@ -15,6 +15,7 @@ main {
 
 .landing-grid {
   background-color: black;
+  background-size: cover;
   height: 100vh;
   width: 100vw;
   display: grid;
@@ -94,7 +95,7 @@ main {
   border-left-color: black;
   border-top-color: black;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../assets/snow.jpg");
+    url("../assets/images/about_us_bg.png");
   border-top-color: black;
   cursor: pointer;
   width: 100%;
@@ -118,7 +119,7 @@ main {
   border-left-color: black;
   border-top-color: black;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../assets/sky.jpg");
+    url("../assets/images/music_bg.png");
   border-top-color: black;
   cursor: pointer;
   width: 100%;
@@ -144,7 +145,7 @@ main {
   border-left-color: black;
   border-top-color: black;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../assets/pines.jpg");
+    url("../assets/images/contact_bg.png");
   border-top-color: black;
   cursor: pointer;
   width: 100%;

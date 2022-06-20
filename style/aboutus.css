@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap");
+@font-face {
+  font-family: "UglyQua";
+  src: url(../fonts/UglyQua.ttf);
+}
 body {
   margin: 0 !important;
   padding: 0 !important;
-  font-family: "Reenie Beanie";
+  font-family: "UglyQua" !important;
 }
 
 a {
@@ -90,7 +94,7 @@ a {
   height: 300px;
   justify-self: center;
   height: 70%;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: rgb(255, 255, 255);
   text-shadow: 5px 5px 20px #353535;
   width: 80%;
@@ -116,6 +120,7 @@ a {
 
 .about-us-top-nav__text {
   margin-left: 10px;
+  font-size: 2rem;
 }
 
 .about-us-top-nav__text:hover {
@@ -135,6 +140,10 @@ a {
     position: relative;
     top: -20px;
     left: -20px;
+  }
+
+  .about-us-main-grid__text {
+    font-size: 1.5rem;
   }
 
   .about-us-main-grid__nav-text {
@@ -177,6 +186,9 @@ a {
     overflow: visible;
     text-align: center;
   }
+  .about-us-top-nav__text {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -189,6 +201,12 @@ a {
   .about-us__logo-single {
     position: relative;
     top: -100px;
+  }
+  .about-us-main-grid__text {
+    font-size: 1.5rem;
+  }
+  .about-us-top-nav__text {
+    font-size: 1.2rem;
   }
 
   .about-us-presskit {
@@ -243,6 +261,12 @@ a {
     position: relative;
     top: -20px;
     left: -20px;
+  }
+  .about-us-top-nav__text {
+    font-size: 1.2rem;
+  }
+  .about-us-main-grid__text {
+    font-size: 1.5rem;
   }
 
   .main-grid__image {

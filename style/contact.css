@@ -8,6 +8,7 @@ body {
 
 a {
   text-decoration: none; /* no underline */
+  color: rgba(108, 241, 75, 0.979);
 }
 
 ::placeholder {
@@ -46,8 +47,6 @@ a {
   -ms-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../assets/pines.jpg");
 }
 
 .contact__logo-single {
@@ -123,7 +122,6 @@ a {
 .contact {
   display: grid;
   justify-self: left !important;
-  background-color: #ff0000;
   justify-content: left;
   width: 100% !important;
   height: 100% !important;
@@ -137,7 +135,7 @@ a {
   backdrop-filter: blur(10px);
   border-radius: 10px;
   margin: 20px;
-  box-shadow: 5px 5px 40px #353535;
+  box-shadow: 5px 5px 40px #080808;
   padding: 20px;
   gap: 20px;
 }
@@ -256,7 +254,7 @@ a {
 
 .send-button {
   display: grid;
-  background-color: rgba(132, 115, 174, 0.8);
+  background-color: rgba(127, 174, 115, 0.568);
   height: 20px;
   width: 100px;
   font-size: 60%;
