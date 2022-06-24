@@ -265,3 +265,23 @@ a {
     font-size: 1.8rem;
   }
 }
+
+@media screen and (max-width: 1500px) {
+  .music-main-grid__text {
+    overflow-x: scroll;
+    height: 300px;
+    justify-self: center;
+    height: 70%;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 20px #353535;
+    width: 80%;
+    overflow-x: hidden;
+    font-weight: 200;
+    text-align: left;
+  }
+
+  .music-main-grid__nav-text {
+    font-size: 3rem;
+  }
+}
