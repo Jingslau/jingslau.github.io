@@ -57,10 +57,9 @@ a {
 .about-us__top-nav {
   margin-left: 30px;
   position: relative;
-  color: rgb(99, 99, 99);
+  color: rgb(26, 26, 26);
   display: flex;
   align-items: center;
-
   font-size: 1.8rem;
 }
 
@@ -189,6 +188,15 @@ a {
   .about-us-top-nav__text {
     font-size: 1.2rem;
   }
+  .about-us__top-nav {
+    margin-left: 2px;
+    margin-top: 30px;
+    position: relative;
+    color: rgb(199, 199, 199);
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -245,6 +253,15 @@ a {
     overflow: visible;
     text-align: center;
   }
+  .about-us__top-nav {
+    margin-left: 2px;
+    margin-top: 30px;
+    position: relative;
+    color: rgb(199, 199, 199);
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -300,5 +317,15 @@ a {
     height: 100%;
     overflow: visible;
     text-align: center;
+  }
+
+  .about-us__top-nav {
+    margin-left: 30px;
+    margin-top: -50px;
+    position: relative;
+    color: rgb(199, 199, 199);
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
   }
 }
